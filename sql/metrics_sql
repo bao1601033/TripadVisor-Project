@@ -1,0 +1,15 @@
+CREATE OR REPLACE TABLE `capstone2-475108.capstone2_dataset.tmp_hotel_metrics` AS
+SELECT
+  CAST(hotel_id AS STRING) AS hotel_id,
+
+  COUNT(*) AS review_count,
+
+  AVG(rating) AS average_rating,
+
+  AVG(sentiment_score) AS average_sentiment,
+
+  SAFE_DIVIDE(COUNTIF(sentiment_score > 0.3), COUNT(*)) AS positive_ratio
+
+FROM `capstone2-475108.capstone2_dataset.hotel_reviews`
+WHERE rating IS NOT NULL    -- bỏ review lỗi / rác
+GROUP BY CAST(hotel_id AS STRING);

@@ -11,7 +11,7 @@ Below is a snapshot of the interactive dashboard built on top of BigQuery Data M
 ![Hotel Analytics Dashboard](docs/looker_dashboard_overview.png)
 
 🔗 **Live dashboard**:  
-https://lookerstudio.google.com/reporting/XXXXXXX
+[https://lookerstudio.google.com/reporting/XXXXXXX](https://lookerstudio.google.com/reporting/cdcdace5-137d-4ba0-9e19-9a29ac5aea36)
 
 
 ## Tech Stack

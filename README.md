@@ -8,7 +8,7 @@ The system helps tourists easily explore hotels based on location, ratings, sent
 
 Below is a snapshot of the interactive dashboard built on top of BigQuery Data Mart:
 
-![Hotel Analytics Dashboard](docs/looker_dashboard_overview.png)
+https://github.com/bao1601033/TripadVisor-Project/blob/main/docslooker_dashboard_overview.png.jpg
 
 🔗 **Live dashboard**:  
 [https://lookerstudio.google.com/reporting/XXXXXXX](https://lookerstudio.google.com/reporting/cdcdace5-137d-4ba0-9e19-9a29ac5aea36)

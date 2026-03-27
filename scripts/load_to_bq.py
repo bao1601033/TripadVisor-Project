@@ -13,12 +13,12 @@ def ensure_dataset():
     ds_ref = client.dataset(DATASET)
     try:
         client.get_dataset(ds_ref)
-        print(f"✅ Dataset '{DATASET}' đã tồn tại.")
+        print(f" Dataset '{DATASET}' đã tồn tại.")
     except Exception:
         ds = bigquery.Dataset(ds_ref)
         ds.location = "US"
         client.create_dataset(ds)
-        print(f"🆕 Đã tạo dataset '{DATASET}'.")
+        print(f" Đã tạo dataset '{DATASET}'.")
 
 def load_hotels():
     df = pd.read_excel(HOTEL_XLSX, engine="openpyxl")
@@ -45,7 +45,7 @@ def load_hotels():
         job_config=bigquery.LoadJobConfig(write_disposition="WRITE_TRUNCATE")
     )
     job.result()
-    print(f"🏨 Đã nạp {job.output_rows} bản ghi vào 'hotels_core'.")
+    print(f" Đã nạp {job.output_rows} bản ghi vào 'hotels_core'.")
 
 def load_reviews_and_compute_metrics():
     """Nạp review và tính trung bình rating."""

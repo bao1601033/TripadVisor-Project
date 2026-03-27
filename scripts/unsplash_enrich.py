@@ -99,7 +99,7 @@ def enrich_hotels(limit=20, test_mode=False):
 
     # finally insert if we have rows
     insert_photos(rows_to_insert)
-    print("🎉 Enrichment finished.")
+    print("Enrichment finished.")
 
 if __name__ == "__main__":
     # Run in test mode first (process only 1 hotel) to verify everything works.

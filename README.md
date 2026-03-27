@@ -4,6 +4,8 @@
 This project builds an end-to-end data pipeline to collect, process, enrich, and analyze hotel reviews in Vietnam, using Google BigQuery as the Data Warehouse and Looker Studio for visualization.
 
 The system helps tourists easily explore hotels based on location, ratings, sentiment, review behavior, and visual information.
+
+This project was built in 2025 as a learning project
 ## Looker Studio Dashboard
 
 Below is a snapshot of the interactive dashboard built on top of BigQuery Data Mart:
